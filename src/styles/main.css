@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+body * {
+  box-sizing: border-box;
+}
+body #root {
+  width: 100%;
+}
+body #root .main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+}
+body #root .main-header * {
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

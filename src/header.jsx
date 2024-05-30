@@ -1,34 +1,46 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from 'react';
+import NavItem from './components/NavItem';
+import Button from './components/Button';
+import LogoImg from './components/LogoImg';
 
+function header() {
+  return (
+          <header className="main-header w-100">
+              <div className="row align-items-center container-fluid text-center py-4">
 
-function Header(){
-    return(
-        <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    );
+                <div className="col-md-4 ">
+                  <LogoImg
+                    imgAlt={'testing'}
+                    imgSrc={'/'}
+                  />
+                </div>
+                
+                <div className="col-md-4">
+                  <nav className="w-100">
+                    <ul class='d-flex justify-content-around align-items-center list-unstyled mb-0'>  
+                      <NavItem
+                        navLink={'#'} navName={'Link1'}
+                      />
+                        <NavItem
+                        navLink={'#'} navName={'Link2'}
+                      />
+                        <NavItem
+                        navLink={'#'} navName={'Link3'}
+                      />
+                    </ul>
+                  </nav>
+                </div>
+                
+                <div className="col-md-4">
+                  <Button
+                    buttonLink={"#"}
+                    buttonText={"Click Me"}
+                  />
+                </div>
+
+              </div>
+          </header>  
+      )
 }
 
-export default Header;
+export default header

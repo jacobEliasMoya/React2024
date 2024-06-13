@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 
 function Button(props) {
   return (
-    <a className='btn' href={props.buttonLink}> {props.buttonText}</a>
+    <a className={props.buttonClass} href={props.buttonLink}> {props.buttonText}</a>
   )
 }
 
 Button.propTypes = {
+    buttonClass:PropTypes.any,
     buttonLink:PropTypes.any,
     buttonText:PropTypes.any,
 }

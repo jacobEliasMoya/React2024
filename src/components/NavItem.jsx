@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function NavItem(props) {
   return (
-    <a className={props.navLink}>{props.navName}</a>
+    <li><a className={props.navLink}>{props.navName}</a></li>
   )
 }
 

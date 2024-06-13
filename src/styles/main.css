@@ -2,19 +2,56 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  background-color: #fff;
 }
 body * {
   box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+body .invert, body .invert * {
+  color: #fff;
 }
 body #root {
   width: 100%;
 }
+body #root .btn {
+  background-color: #222;
+  padding: 1em 2em;
+  transition: all ease 0.25s;
+  scale: 0.95;
+}
+body #root .btn:hover {
+  scale: 1;
+  background-color: #333;
+}
 body #root .main-header {
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: #222;
+  z-index: 1;
+  background: rgba(17, 17, 17, 0.6);
+  width: 100vw;
+  left: 0vw;
+}
+body #root .main-header ul li {
+  min-width: 150px;
 }
 body #root .main-header * {
   color: #fff;
+}
+body #root section {
+  background-color: #111;
+  position: relative;
+  height: 80vh;
+}
+body #root section .robot-img {
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url(../assets/robot-quirky.png);
+}
+body #root section .text-block {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

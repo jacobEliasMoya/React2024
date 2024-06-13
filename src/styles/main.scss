@@ -1,26 +1,75 @@
+$color1:rgb(87, 21, 255);
+
 body{
 
     *{
         box-sizing: border-box;
+        font-family: "Bebas Neue", cursive;
+    }
+
+    .invert,.invert *{
+        color:#fff;
     }
 
     display: flex;
     flex-direction: column;
     width:100vw;
+    background-color: #fff;
 
     #root{
-        
+
         width: 100%;
+
+        .btn{
+            background-color:#222;
+            padding: 1em 2em;
+            transition: all ease .25s;
+            scale: .95;
+
+            &:hover{
+                scale: 1;
+                background-color:#333;
+            }
+        }
 
         .main-header{
 
             position: fixed;    
             top:0;
-            left: 0;
-            background-color: #222;
+            z-index: 1;
+            background: #11111199;
+            width:100vw;
+            left:0vw;
 
+            ul{
+                li{
+                    min-width: 150px;
+                }
+            }
             *{
                 color: #fff;
+            }
+        }
+
+        section{
+            // background: radial-gradient(circle at 75% 100%, #fff 0% 20%, #000000 20%);
+            background-color: #111;
+            position: relative;
+            height: 80vh;
+
+            .robot-img{
+                background-size: contain;
+                background-position: right;
+                background-repeat: no-repeat;
+                background-image: url(../assets/robot-quirky.png);
+
+            }
+
+            .text-block{
+                padding: 2em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }

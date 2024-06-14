@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  background-color: #fff;
+  background-color: #111;
 }
 body * {
   box-sizing: border-box;
@@ -38,14 +38,29 @@ body #root .main-header ul li {
 body #root .main-header * {
   color: #fff;
 }
-body #root section {
+body #root section.first-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+body #root .dk {
   background-color: #111;
+}
+body #root .lt {
+  background-color: #fff;
+}
+body #root section.thin {
+  width: 96%;
+  margin: auto;
+}
+body #root section {
   position: relative;
   height: 80vh;
+  width: 100%;
 }
 body #root section .robot-img {
   background-size: contain;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url(../assets/robot-quirky.png);
 }
@@ -54,4 +69,13 @@ body #root section .text-block {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+body #root .large-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+body #root .card-wrapper {
+  height: 100%;
+  min-height: 450px;
+  background-color: #cecece;
 }/*# sourceMappingURL=main.css.map */

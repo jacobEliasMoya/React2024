@@ -5,7 +5,7 @@ function NavItem(props) {
   return (
     <li><a className={props.navLink}>{props.navName}</a></li>
   )
-}
+} 
 
 NavItem.propTypes = {
     navLink:PropTypes.any,

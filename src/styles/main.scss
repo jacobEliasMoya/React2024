@@ -1,4 +1,11 @@
 $color1:rgb(87, 21, 255);
+$colordk:#111;
+$colorlt:#fff;
+$color2:#333;
+$color3:#444;
+$color4:#555;
+$color5:#666;
+$color6:#cecece;
 
 body{
 
@@ -14,7 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     width:100vw;
-    background-color: #fff;
+    background-color: $colordk;
 
     #root{
 
@@ -28,7 +35,7 @@ body{
 
             &:hover{
                 scale: 1;
-                background-color:#333;
+                background-color:$color2;
             }
         }
 
@@ -46,20 +53,40 @@ body{
                     min-width: 150px;
                 }
             }
+
             *{
                 color: #fff;
             }
         }
 
+        section.first-fixed{
+            position: fixed;
+            top:0;
+            left:0;
+        }
+
+        .dk{
+                background-color:$colordk;
+        }
+
+        .lt{
+            background-color:$colorlt;
+        }
+
+        section.thin{
+            width: 96%;
+            margin: auto;
+        }
+
         section{
             // background: radial-gradient(circle at 75% 100%, #fff 0% 20%, #000000 20%);
-            background-color: #111;
             position: relative;
             height: 80vh;
+            width: 100%;
 
             .robot-img{
                 background-size: contain;
-                background-position: right;
+                background-position: center;
                 background-repeat: no-repeat;
                 background-image: url(../assets/robot-quirky.png);
 
@@ -71,6 +98,17 @@ body{
                 align-items: center;
                 justify-content: center;
             }
+        }
+
+        .large-wrapper{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card-wrapper{
+            height: 100%;
+            min-height: 450px;
+            background-color: $color6;
         }
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import NavItem from './components/NavItem';
 import Button from './components/Button';
 import LogoImg from './components/LogoImg';
+import Icon from './components/Icon';
 
 function header() {
   return (
@@ -9,14 +10,16 @@ function header() {
               <div className="row align-items-center container-fluid text-center py-4">
 
                 <div className="col-md-2 ">
-                  <LogoImg
+
+                <strong class='h2'> CSS TOGO </strong>
+                  {/* <LogoImg
                     imgAlt={'testing'}
                     imgSrc={'/'}
-                  />
+                  /> */}
                 </div>
                 
                 <div className="col-md-8">
-                  <nav className="w-100">
+                  <nav className="w-100 d-none">
                     <ul class='d-flex justify-content-center align-items-center list-unstyled mb-0'>  
                       <NavItem
                         navLink={'#'} navName={'Link1'}
@@ -32,9 +35,8 @@ function header() {
                 </div>
                 
                 <div className="col-md-2">
-                  <Button
-                    buttonLink={"#"}
-                    buttonText={"Click Me"}
+                  <Icon
+                    iconClass={"fa fa-bars h2"}
                   />
                 </div>
 

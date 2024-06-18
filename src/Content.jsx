@@ -15,8 +15,8 @@ return (
                 </div>
 
                 <div className='col-md-6 p-md-5 d-flex align-items-start justify-content-center flex-column'>
-                    <h1> Welcome To CSS To - Go </h1>
-                    <h2> If you See It, Grab it </h2>
+                    <h1> Shakin Cobwebs loose</h1>
+                    <h2> React For The Win </h2>
 
 
                     <div className='row mt-4'>
@@ -42,11 +42,6 @@ return (
             </div>
         </section>
 
-        <section className='overflow-hidden invert py-5'>
-            <div className='large-wrapper h-100'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eos qui, dignissimos eius cumque, incidunt numquam nobis doloremque earum iste ex! Animi totam voluptate exercitationem, dolorem reprehenderit harum debitis excepturi, id dolor, quibusdam numquam culpa provident! Ea praesentium optio unde consequuntur nam maiores quis. Soluta quasi, suscipit, odio earum modi repudiandae, assumenda cupiditate dolor quis rerum veniam porro natus accusamus dolores. Pariatur nihil velit at natus atque harum, fuga incidunt ducimus nulla odio beatae eum quod, sed, distinctio a. Facilis alias facere architecto debitis excepturi ad deserunt totam reprehenderit harum a quas ratione id nihil doloremque, nisi modi atque asperiores?
-            </div>
-        </section>
         <section className='overflow-hidden invert py-5 lt rounded thin'>
             <div className='large-wrapper h-100'>
                 <div className='row container-fluid h-100'>
